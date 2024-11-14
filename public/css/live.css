@@ -1,0 +1,182 @@
+/* Global styles */
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Menu styles */
+.navigation-menu {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.navigation-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation-menu li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.navigation-menu a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Parameters section styles */
+.parameter {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: left;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.parameter strong {
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+    font-size: large;
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    margin-top: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.toggle-switch input {
+    display: none;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00bcd4;
+    border-radius: 15px;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-slider:before {
+    content: "Manual"; /* Default text */
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    line-height: 30px;
+    background-color: #00bcd4;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .toggle-slider {
+    background-color: #00bcd4; /* Background color when checked */
+}
+
+input:checked + .toggle-slider:before {
+    content: "Auto"; /* Text when checked */
+    left: 25%;
+}
+
+
+/* Slider styles */
+.slider-range {
+    color: #333;
+    font-weight: bold;
+}
+
+.pressure-slider,
+.fan-speed-slider {
+    font-size: large;
+    margin: 20px;
+}
+
+.pressure-input,
+.fan-speed-input {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Modify the slider */
+.pressure-input:hover {
+    opacity: 1;
+}
+
+/* Slider value styles */
+.slider-value {
+    color: #00bcd4;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+#notification {
+    color: #00bcd4;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px auto;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#live-canvas {
+    position: relative;
+    margin: auto;
+    height: 80vh;
+    width: 80vw;
+}
+@keyframes wordShuffle {
+    from {
+        width: 0;
+    } 
+    to {
+        width: 100%;
+    }
+}
+
+h1 {
+    color:  #00bcd4;
+    animation: wordShuffle 5s steps(60) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center; 
+    display: block; 
+    width: fit-content;
+    margin: auto; 
+
+}

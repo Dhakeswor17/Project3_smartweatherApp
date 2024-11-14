@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Page</title>
+    <link rel="stylesheet" type="text/css" href="css/live.css">
+</head>
+<body>
+<!-- Navigation Menu -->
+<nav class="navigation-menu">
+    <ul>
+        <li><a href="/">Live View</a></li>
+        <li><a href="/charts">Charts</a></li>
+    </ul>
+</nav>
+<div class="container"><h1>Live View</h1></div>
+
+
+<!-- Live page data  -->
+<div class="parameter">
+    <strong>Relative humidity:</strong> <span id="rh">N/A</span> %
+</div>
+<div class="parameter">
+    <strong>Temperature:</strong> <span id="temperature">N/A</span> °C
+</div>
+
+<div id="live-canvas">
+    <canvas id="live-chart-id"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/live.js"></script>
+</body>
+</html>

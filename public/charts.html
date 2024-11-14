@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Charts</title>
+    <link rel="stylesheet" type="text/css" href="css/charts.css">
+</head>
+<body>
+<!-- Navigation Menu -->
+<nav class="navigation-menu">
+    <ul>
+        <li><a href="/">Live View</a></li>
+        <li><a href="/charts">Charts</a></li>
+    </ul>
+</nav>
+
+
+<div class="chart-menu">
+    <!-- Dropdown menu for selecting chart type -->
+    <label for="chartType">Select Chart Type:</label>
+    <select id="chartType">
+        <option value="bar">Stacked Bar Chart</option>
+        <option value="line">Line Chart</option>
+        <option value="doughnut">Doughnut Chart</option>
+    </select>
+</div>
+
+<div id="rangeSelector">
+    <!-- Date and time input fields for selecting time range -->
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" required>
+    <label for="startTime">Start Time:</label>
+    <input type="time" id="startTime" required>
+    <br><br>
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate" required>
+    <label for="endTime">End Time:</label>
+    <input type="time" id="endTime" required>
+</div>
+
+<!-- Input fields for Doughnut chart -->
+<div id="doughnutChartInput" style="display: none;">
+    <!-- Input field for 'nr' -->
+    <label for="nr">Enter sample nr (Starts from 0):</label>
+    <input type="number" id="nr" required min="0">
+</div>
+
+<!-- Button to update the chart based on the selected time range -->
+<button id="updateChart">Update Chart</button>
+
+<div id="canvas">
+    <canvas id="chartId"></canvas>
+</div>
+
+<!-- Buttons to switch pages -->
+<div id="pagination" style="text-align: center; display: none">
+    <button id="prevPage">Previous Page</button>
+    <span id="currentPage">Page 1</span>
+    <button id="nextPage">Next Page</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/charts.js"></script>
+</body>
+</html>

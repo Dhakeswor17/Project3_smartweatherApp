@@ -1,0 +1,147 @@
+/* Global styles */
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Menu styles */
+.navigation-menu {
+    background-color:#fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.navigation-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation-menu li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.navigation-menu a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+}
+
+
+.chart-menu {
+    color:#00bcd4;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-menu select {
+    font-size: medium;
+    background-color: #fff;
+    border: none;
+}
+
+#rangeSelector {
+    color: #00bcd4;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    width: 450px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add space between Date and Time */
+#rangeSelector label[for="startTime"],
+#rangeSelector label[for="endTime"] {
+    margin-left: 25px;
+}
+
+#rangeSelector input[type="date"],
+#rangeSelector input[type="time"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#updateChart {
+    color:#00bcd4;
+    font-family: Roboto, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#doughnutChartInput {
+    color: #00bcd4;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    width: 450px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#doughnutChartInput input {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#pagination {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#pagination button {
+    color: #00bcd4;
+    font-family: Roboto, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#currentPage {
+    font-weight: bold;
+}
+
+#canvas {
+    position: relative;
+    margin: auto;
+    height: 80vh;
+    width: 80vw;
+}
