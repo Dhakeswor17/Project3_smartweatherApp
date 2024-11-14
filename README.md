@@ -80,4 +80,7 @@ Investigating power-efficient strategies, especially for scenarios where the sys
 
 ## Weather Station High Level Block Diagram 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 47066e792c7d2e3eb9d8c9a01a29520f7fdba6c6
